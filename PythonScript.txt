@@ -1,0 +1,29 @@
+total_downloads=0
+
+def script__1(playlist_id,tag,limit):
+    playlist_data=fetch_playlist_data_spotify(playlist_id)
+    limit=150
+
+    for song in playlist_data:
+        filename=str(vvid.vvid1().hex)
+
+        download_song(song['song_name],filename)
+        store_in_firebase(filename)
+
+        url=get_link_of_file(filename)
+
+        ms=song['duration_ms]
+        minutes=round(timedelta(milliseconds=ms).total_seconds()/60,2)
+        objects={
+                **songs,
+                "duration_ms" : minutes,
+                "filename":filename,
+                "song_url":url,
+                "tag":tag
+        }
+        insert_document(objects)
+        total_downloads+=1
+        if(total_downloads>limit)
+            break
+
+    print("Successfully donloaded "+ str(total_downloads)+" songs");

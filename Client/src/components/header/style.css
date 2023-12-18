@@ -1,0 +1,138 @@
+header {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 155px;
+  background: #131313;
+  z-index: 999999;
+}
+@media (max-width: 1389px) {
+  header {
+    width: 140px;
+  }
+}
+@media (max-width: 1243px) {
+  header {
+    width: 120px;
+  }
+}
+
+@media (max-width: 1039px) {
+  header {
+    width: 100px;
+  }
+}
+
+@media (max-width: 877px) {
+  header {
+    width: 80px;
+  }
+}
+
+@media (max-width: 689px) {
+  header {
+    width: 60px;
+  }
+}
+
+@media (max-width: 493px) {
+  header {
+    width: 45px;
+  }
+}
+
+.header_top .logo_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(35px);
+  padding: 5px 0;
+}
+.logo_top img {
+  height: 70px;
+  width: 75px !important;
+}
+.header_middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 55px 0;
+}
+.middle_icon {
+  border-radius: 10px;
+  cursor: pointer;
+  color: #898989;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.middle_icon:hover {
+  color: #fff;
+
+  transition: all linear 0.5s;
+}
+.active {
+  color: #fff;
+}
+.header_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100px);
+}
+.middle_icon_animation {
+  animation: flash 1s infinite;
+  border-radius: 50%;
+  text-shadow: 0 0 10px blue;
+  filter: drop-shadow(1px 2px 3px #d8e9a8);
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+    color: #1c1b1c;
+  }
+  50% {
+    opacity: 0.5;
+    color: #ff9f29;
+    font-size: 25px;
+  }
+  100% {
+    opacity: 1;
+    color: #1c1b1c;
+  }
+}
+@media (max-width: 1155px) {
+  .logo_top img {
+    width: 120px;
+  }
+}
+@media (max-width: 940px) {
+  .logo_top img {
+    width: 110px;
+  }
+}
+@media (max-width: 798px) {
+  .logo_top img {
+    height: 50px;
+    width: 60px;
+  }
+}
+@media (max-width: 680px) {
+  .logo_top img {
+    height: 40px;
+    width: 50px !important;
+  }
+}
+@media (max-width: 475px) {
+  .logo_top img {
+    height: 40px;
+    width: 40px !important;
+  }
+}

@@ -1,0 +1,143 @@
+html,
+body {
+  background-color: black;
+}
+.plylist-interface {
+  margin-bottom: 30px !important;
+}
+
+.playlist-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: black;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+@media (max-width: 1043px) {
+  .playlist-name {
+    font-size: 50px !important;
+  }
+}
+.playlist_header_inner {
+  padding: 25px;
+}
+.playlist-main {
+  width: 85%;
+  padding: 30px;
+  position: absolute;
+  left: 10%;
+  background-color: black;
+}
+@media (max-width: 1155px) {
+  .playlist-main {
+    left: 12%;
+  }
+}
+.loader_div {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: black;
+}
+
+.playlist-img {
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 10px;
+}
+.playlist-tag {
+  font-size: 18px;
+  transform: translateX(20px);
+}
+.playlist-name {
+  font-size: 80px;
+  font-weight: 800 !important;
+  transform: translateX(20px);
+}
+.playlist-songs {
+  border-radius: 10px;
+
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+
+.songIMG {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 5px;
+}
+table {
+
+  background-image: linear-gradient(to bottom, black, #1c1b1c) !important;
+
+  border-collapse: collapse;
+  border: none;
+
+}
+tr {
+  border-radius: 10px !important;
+  border: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+thead tr:hover {
+  background-color: black;
+}
+thead {
+  border-bottom: 1px solid rgb(73, 73, 73);
+}
+.mood_playlist {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+  align-items: center;
+}
+.mood_playlist_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mood_playlist button {
+  background: transparent;
+  border: none;
+  font-size: 35px;
+  height: 50px;
+  width: 50px;
+}
+.mood_playlist button:first-of-type {
+  background-color: green;
+  color: white;
+  font-size: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.song_title p:first-of-type {
+  font-size: 15px;
+}
+.song_title p:last-of-type {
+  color: gray;
+  font-size: 13px;
+}
+.album_name {
+  font-size: 14px;
+  color: lightgray;
+}
+.release_date {
+  font-size: 14px;
+}
+.duration {
+  font-size: 14px;
+}
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.141);
+}
